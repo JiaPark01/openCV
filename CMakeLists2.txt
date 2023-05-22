@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(OpenCV)
+find_package(OpenCV REQUIRED)
+include_directories({OpenCV_INCLUDE_DIRS})
+add_executable(OpenCV main.cpp main2.cpp main3.cpp main4.cpp main5.cpp main6.cpp main7.cpp main8.cpp main9.cpp main10.cpp detect_face.cpp knn.cpp)
+target_link_libraries(OpenCV ${OpenCV_LIBS})
